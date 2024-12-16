@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Store - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+
+        .product-card p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .product-card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        .product-card button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Organic Store</h1>
+    <p>Fresh Organic Vegetables, Pure Natural Ghee, and Healthy Cold-Pressed Oils</p>
+</header>
+
+<div class="container">
+    <!-- Product 1 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Vegetables">
+        <h3>Fresh Vegetables</h3>
+        <p>Organic and farm-fresh vegetables.</p>
+        <button>Shop Now</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Ghee">
+        <h3>Natural Ghee</h3>
+        <p>Pure and healthy natural ghee.</p>
+        <button>Shop Now</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Cold Pressed Oils">
+        <h3>Cold Pressed Oils</h3>
+        <p>Healthy and unrefined oils.</p>
+        <button>Shop Now</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Organic Store. All rights reserved.</p>
+</footer>
+
+<script>
+    // Example JavaScript for button validation
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Thank you for your interest! This feature will be available soon.');
+        });
+    });
+</script>
+
+</body>
+</html>
